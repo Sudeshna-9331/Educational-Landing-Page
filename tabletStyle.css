@@ -1,0 +1,914 @@
+@media only screen and (min-width:769px) and (max-width:1023px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      
+    }
+    
+    
+    /* NAVBAR */
+    .navbar{
+        background-color: transparent!important;
+       position: relative;
+       height: 8rem;
+       width: 100%;
+    }
+   
+    .navbar .navbar-brand{
+        margin: 1rem 2rem;
+        font-size: 40px;
+        color:rgb(9, 124, 255) ;
+    }
+    
+    .navbar-nav{
+       
+        padding-left:4rem;
+        padding-right: 0;
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-evenly;
+      
+    }
+    .navbar-brand img{
+        height: 4rem;
+    }
+    .navbar-nav a{
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .navbar-collapse{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        padding: 2rem 0;
+        margin-left: 0!important;
+        width: 100vw!important;
+        margin-right: 0!important;
+    }
+    .navbar .navbar-collapse ul{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       padding: 0;
+    }
+    .navbar .navbar-collapse ul li{
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    .navbar .navbar-collapse ul li a:hover{
+        font-weight: 600;
+    }
+    .navbar  .login_signup{
+        width: 37%;
+        margin-right: 0;
+     
+    }
+    .navbar .navbar-collapse ul .dropdown ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+       width: 60%;
+       border-radius: 2rem;
+    }
+    .navbar .navbar-collapse ul .dropdown ul li a{
+        font-size: 0.9rem;
+        color: rgb(94, 91, 91)!important;
+       
+       
+    }
+    .navbar .navbar-collapse ul .dropdown button{
+        background-color:transparent;
+        border-radius: 3rem;
+        padding: 8px 16px;
+        margin: 0;
+        color: rgb(9, 124, 255);
+        border: 1px solid rgb(9, 124, 255);
+    }
+    .signup{
+        padding: 8px 27px;
+        border-radius: 30px;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        margin-left:2px;
+        background-color: white;
+    }
+    .signup a{
+        text-decoration: none;
+        color: rgb(9, 124, 255);
+    }
+    .signup:hover a{
+        background-color: transparent;
+        color: white;
+    }
+    .login{
+        padding: 8px 37px;
+        border-radius: 30px;
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: white;
+        margin-left: 5px;
+    }
+    .login:hover a{
+        background-color: transparent;
+        color: white;
+       
+    }
+    .login a{
+        text-decoration: none;
+    }
+    .login a:hover{
+        color: white;
+    }
+    
+    /*  SECTION */
+    .content .section{
+        height: 600px;
+        width: 100%;
+        background: linear-gradient(rgba(9, 124, 255,0.8) , rgba(9, 124, 255,0.8)), url(./images/home-bg.jpg);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    .content .section .section_inner{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       padding: 15rem 10rem;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .content .section .section_inner h1{
+        color: white;
+        font-size: 27px;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .content .section .section_inner p{
+        font-size: 16px;
+        color: white;
+        font-family:"Lato", sans-serif;
+    }
+    .content .section .section_inner button{
+        padding: 12px 22px;
+        border: none;
+        background-color: rgb(11, 11, 65);
+        color: white;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+    .content .cards{
+        position: relative;
+        margin-top: 2rem;
+      
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .content .cards .card{
+        width: 20rem;
+        margin: 1rem;
+        text-align: center;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(155, 169, 231, 0.2), 0 6px 20px 0 rgba(85, 123, 248, 0.19);
+        border-radius: 17px;
+       
+    }
+    .content .cards .card .card-img-top{
+       
+        width: 6rem;
+       height: 6rem;
+        margin: auto;
+      margin: 1rem auto;
+      margin-top: 1rem;
+        padding-bottom: 0;
+       
+    }
+    .content .cards .card .card-body{
+        padding: 20px 10px;
+    }
+    .content .cards .card .card-title{
+       color:rgb(9, 109, 223);
+       font-size: 20px;
+       font-family:"Lato", sans-serif;
+    }
+    .content .cards .card .card-text{
+        color:rgb(113, 113, 129);
+        font-size: 13px;
+        padding: 0 25px;
+        font-family:"Lato", sans-serif;
+    }
+    
+    /*  WHY US */
+    .why-us{
+        position: relative;
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: row;
+       align-items: center;
+      justify-content: space-between;
+     width: 100%;
+    }
+    .why-us img{
+        height: 300px;
+        padding: 0 30px;
+        border-radius: 50%;
+       width: 40%;
+    }
+    .why-us .why-us-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+    }
+    .why-us .why-us-inner h2{
+        color: rgb(9, 124, 255);
+        letter-spacing: 3px;
+        font-size: 3rem;
+        font-size: 25px;
+        font-weight: 400;
+       
+    }
+    .why-us .why-us-inner .p{
+        padding: 10px 25px;
+        font-size: 0.8rem;
+        color: rgb(95, 89, 89);
+    }
+    .why-us .why-us-inner .cards{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .why-us .why-us-inner .cards .card1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .why-us .why-us-inner .cards .card2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    .why-us .why-us-inner .cards .card{
+        
+        width: 15rem;
+       margin: 0.5rem 0.2rem;
+       box-shadow: 0 4px 1px 0 rgba(155, 169, 231, 0.2), 0 2px 2px 0 rgba(85, 123, 248, 0.19);
+       border: none;
+    }
+    .why-us .why-us-inner .cards .card .card-title{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .why-us .why-us-inner .cards .card .card-text{
+        font-size: 0.7rem;
+        color: rgb(95, 89, 89);
+    }
+    
+    /* COURSES */
+    
+    .courses{
+        position: relative;
+        text-align: center;
+        width: 100vw;
+        overflow: hidden;
+        background-image: url(./images/Vector.svg);
+        background-position: center;
+        background-size: cover;
+       
+       
+    }
+    
+    .courses .products {
+        padding: 2rem 0;
+        margin: 1rem auto;
+        
+      }
+    
+      .courses .products .section-title h2{
+          text-align: center;
+          font-size: 2.3rem;
+          letter-spacing: 7px;
+          color: rgb(9, 124, 255);
+          font-weight: 300;
+          display: inline;
+          font-family:"Lato", sans-serif;
+          margin: 0 auto;
+      }
+      .courses .products .products-center{
+          display: grid;
+          width: 90vw;
+          margin: 2rem auto;
+          max-width: 1170px;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-column-gap: 3rem;
+          grid-row-gap: 3rem;
+      }
+      .courses .products .products-center .img-container:hover{
+        border-radius: 30px;
+      }
+      .courses  .products .fa-shopping-cart {
+        margin-right: 0.5rem;
+      }
+      .courses .products .img-container {
+        position: relative;
+        overflow: hidden;
+        box-shadow:   0 0 3px rgb(194, 189, 189), 0 0 5px rgb(194, 189, 189);
+        border-radius: 30px;
+      }
+      .courses .products .products-center .product-img {
+        display: block;
+        width: 100%;
+        min-height: 10rem;
+        transition: all 0.3s linear;
+      }
+      .courses .products .bag-btn{
+          position: absolute;
+          top: 70%;
+          right: 0;
+          background: #f7b87d;
+          border: none;
+          text-transform: uppercase;
+          padding: 0.5rem 0.75rem;
+          letter-spacing: 2px;
+          font-weight: bold;
+          transition: all 0.3s linear;
+          transform: translateX(101%);
+          cursor: pointer;
+         
+      }
+      .courses .products button{
+          font-size: 0.7rem;
+      }
+      .courses .products .img-container:hover .bag-btn{
+        transform: translateX(0);
+        cursor: pointer;
+     }
+     .courses .products .img-container:hover .product-img {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+      
+      .courses .products h4{
+          text-align: center;
+          font-family: "Lato", sans-serif;
+          font-size: 1rem;
+          margin-top: 1rem;
+          letter-spacing:1px;
+          text-transform: capitalize;
+          font-weight: bold;
+          color: rgb(35, 35, 104);
+      }
+      .courses .product h5{
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        letter-spacing: 2px;
+        color: rgb(87, 87, 122);
+        text-align: center;
+      }
+      
+
+
+
+     /*  POPULAR COURSES AND DISCOUNTS */
+       .popular-courses {
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.2rem;
+       
+    }
+    .popular-courses .popular{
+        width: 40%;
+        
+     }
+
+    .popular-courses .popular .heading{
+        text-align: center;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        color:  rgb(9, 124, 255);
+        margin-bottom: 1rem;
+
+    }
+    
+      
+     .popular-courses .popular .subject .subject-name{
+        font-size: 0.9rem;
+        padding: 0.5rem;
+     }
+     .popular-courses .discounts{
+       width: 55%;
+       
+     }
+     .popular-courses .discounts .heading{
+        color: rgb(248, 167, 17);
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+       
+    }
+    .popular-courses .discounts .heading span{
+        background-color: rgb(248, 115, 6);
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+        border-radius: 2rem;
+        margin-left: 0.3rem;
+    }
+    .popular-courses .discounts .accordion-item{
+        border: none;
+      
+    }
+    .popular-courses .discounts .accordion-item .accordion-button{
+        background-color: rgb(252, 193, 85)!important;
+        color: white;
+        border-radius: 3rem!important;
+        border: none;
+        padding: 0.7rem;
+    }
+    .popular-courses .discounts .accordion-item .accordion-body ul li{
+        border: none;
+        list-style-type: circle!important;
+        color: orange;
+        padding: 0.3rem;
+    }
+    .popular-courses .discounts .accordion-item .accordion-body ul li a{
+      padding: 0.4rem;
+      text-decoration: none;
+      color: rgb(35, 35, 104);
+    }
+    .popular-courses .discounts .accordion-item .accordion-body ul li a:hover{
+        text-decoration: underline;
+    }
+
+     /*  OUR FACULTIES  */
+      .faculties{
+        margin-top: 1.2rem;
+        margin-bottom: 1.4rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .faculties .heading h2{
+          text-align: center;
+          font-size: 2rem;
+          color:rgb(4, 105, 221);
+          margin: 2rem 0;
+          letter-spacing: 3px;
+          font-weight: 300;
+      }
+      .faculties .info{
+       margin-left: auto;
+       margin-right: auto;
+       display: flex;
+       width: 100%;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+     
+      }
+      
+       .faculties .faculty-member .offcanvas {
+           height: 35rem;
+           width: 100%;
+       }
+       .faculties .faculty-member .offcanvas .offcanvas-title{
+           font-size: 1.5rem;
+           color: rgb(58, 117, 245);
+           font-family: "Lato", sans-serif;
+           letter-spacing: 2px;
+       }
+       .faculties .faculty-member .offcanvas .member{
+         display: grid;
+         width: 90vw;
+         margin: 2rem auto;
+         max-width: 1500px;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         grid-column-gap: 1rem;
+         grid-row-gap: 2rem;
+       }
+       .faculties .faculty-member .offcanvas .member .card{
+           min-width: 13rem;
+           max-width: 13rem;
+           border: none;
+           border-radius: 2rem;
+           box-shadow: 0 4px 8px 0 rgba(118, 120, 243, 0.2), 0 6px 20px 0 rgba(112, 122, 255, 0.19);
+       }
+       .faculties .faculty-member .offcanvas .member .card img{
+           border: none;
+           height: 10rem;
+           width: 10rem;
+           margin: auto;
+           border-radius: 50%;
+       }
+       .faculties .faculty-member .offcanvas .member .card .card-title{
+           font-size: 1.1rem;
+           color: rgb(67, 127, 255);
+       }
+       .faculties .faculty-member .offcanvas .member .card .card-text{
+         font-size: 0.7rem;
+         color: rgb(109, 106, 106);
+     }
+     .faculties .faculty-member .offcanvas .member .card .icons{
+         margin: auto;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+     }
+     .faculties .faculty-member .offcanvas .member .card .icons i{
+         font-size: 1.5rem;
+         padding: 0.4rem;
+        cursor: pointer;
+     }
+      
+    
+      .faculties .faculty-member .show-member{
+         
+          background-image: url(./images/member.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          background-color: transparent;
+          height: 17rem;
+            width: 17rem;
+          border: none;
+          color: rgb(4, 105, 221);
+          padding: 0;
+          font-size: 1rem;
+          font-family:"Lato", sans-serif;
+      }
+      .show-member:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 2rem;
+      }
+
+
+          /* Reviews */
+          .faculties .reviews .offcanvas {
+            width: 20rem;
+        }
+        
+        .faculties .reviews  .review .offcanvas-title{
+            font-size: 1.5rem;
+            color: rgb(58, 117, 245);
+            font-family: "Lato", sans-serif;
+            letter-spacing: 2px;
+        }
+        .faculties .reviews  .review  .cards{
+          display: grid;
+          width: 90vw;
+         
+          max-width: 1170px;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-column-gap: 3rem;
+          grid-row-gap: 3rem;
+        }
+        .faculties .reviews  .review .card{
+            min-width: 13rem;
+            max-width: 15rem;
+            border: none;
+            border-radius: 2rem;
+            margin: 1rem  auto;
+            box-shadow: 0 4px 8px 0 rgba(118, 120, 243, 0.2), 0 6px 20px 0 rgba(112, 122, 255, 0.19);
+        }
+        .faculties .reviews .review .card img{
+            border: none;
+            height: 12rem;
+            width: 12rem;
+            margin: 0.3rem auto;
+            border-radius: 50%;
+        }
+        .faculties .reviews  .offcanvas  .card .card-title{
+            font-size: 1.1rem;
+            color: rgb(67, 127, 255);
+        }
+        .faculties .reviews  .offcanvas .card .card-text{
+          font-size: 0.7rem;
+          color: rgb(109, 106, 106);
+        }
+      .faculties .reviews .review  .card .icons{
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+      }
+      .faculties .reviews  .review  .card .icons i{
+          font-size: 1.5rem;
+          padding: 0.4rem;
+         cursor: pointer;
+      }
+        .faculties .reviews {
+          margin-top: 0 15rem;
+         
+        } 
+      
+        .faculties .reviews .show-reviews{
+           
+            background-image: url(./images/member.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-color: transparent;
+            height: 17rem;
+            width: 17rem;
+            border: none;
+            color: rgb(4, 105, 221);
+            padding: 0;
+            font-size: 1.2rem;
+           
+            font-family:"Lato", sans-serif;
+        }
+        .faculties .show-reviews:hover{
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          border-radius: 2rem;
+        }
+
+
+
+         /* Upcoming Courses */
+         .faculties .upcoming-courses .offcanvas {
+            height: 26rem;
+        }
+        
+        .faculties .upcoming-courses  .upcoming-course .offcanvas-title{
+            font-size: 1.5rem;
+            color: rgb(58, 117, 245);
+            font-family: "Lato", sans-serif;
+            letter-spacing: 2px;
+        }
+        .faculties .upcoming-courses  .upcoming-course{
+          display: grid;
+          width: 90vw;
+          margin: 1.5rem auto;
+          max-width: 1170px;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-column-gap: 2rem;
+          grid-row-gap: 2rem;
+        }
+        .faculties .upcoming-courses  .upcoming-course  .card{
+            min-width: 15rem;
+            max-width: 15rem;
+            border: none;
+            border-radius: 2rem;
+          margin: auto;
+            box-shadow: 0 4px 8px 0 rgba(118, 120, 243, 0.2), 0 6px 20px 0 rgba(112, 122, 255, 0.19);
+        }
+        .faculties .upcoming-courses .upcoming-course .card img{
+            border: none;
+            height: 12rem;
+            width: 12rem;
+            margin: auto;
+            border-radius: 50%;
+        }
+        .faculties .upcoming-courses  .offcanvas  .card .card-title{
+            font-size: 1.1rem;
+            color: rgb(67, 127, 255);
+        }
+        .faculties .upcoming-courses  .offcanvas .card .card-text{
+          font-size: 0.7rem;
+          color: rgb(109, 106, 106);
+        }
+      .faculties .upcoming-courses .upcoming-course  .card .icons{
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+      }
+      .faculties .upcoming-courses  .upcoming-course  .card .icons i{
+          font-size: 1.5rem;
+          padding: 0.4rem;
+         cursor: pointer;
+      }
+        .faculties .upcoming-courses{
+          margin-top: 0 15rem;
+         
+        } 
+      
+        .faculties .upcoming-courses .show-upcoming-courses{
+           
+            background-image: url(./images/member.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-color: transparent;
+            height: 17rem;
+            width: 17rem;
+            border: none;
+            color: rgb(4, 105, 221);
+            padding: 0;
+            font-size: 1.2rem;
+           
+            font-family:"Lato", sans-serif;
+        }
+        .faculties .upcoming-courses:hover{
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          border-radius: 2rem;
+        }
+
+
+
+     
+
+      /*   CONTACT US   */
+      .contact{
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 0;
+        margin-bottom: 0;
+        background: linear-gradient(rgba(77, 101, 128, 0.7) , rgba(55, 78, 104, 0.7)),url("./images/contact3.jpg");
+        background-position: center;
+       background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .contact .heading{
+      display: flex;
+      flex-direction: column;
+      width:70%;
+      align-items: center;
+      margin: auto;
+    }
+    .contact .heading h2{
+        color: white;
+        font-size: 2.1rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 3px;
+        font-family: "Lato", sans-serif;
+    }
+    .contact .heading p{
+      color: white;
+      font-size: 1rem;
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      width: 100%;
+      margin-bottom: 2.6rem;
+    }
+    .contact .content-info{
+      display: flex;
+      flex-direction: row ;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .contact .content-info .left{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+     margin-left: 1.4rem;
+    }
+    .contact .content-info .left .card{
+        background-color: transparent;
+        border: none;
+      
+        width: 100%;
+    }
+    .contact .content-info .left .card i{
+        background-color: white;
+        padding: 1.2rem;
+       font-size: 1.8rem;
+       border-radius: 50%;
+       
+     
+    }
+    .contact .content-info .left .card .card-body .card-title{
+        font-size: 1rem;
+        color: cyan;
+    }
+    .contact .content-info .left .card .card-body .card-text{
+      font-size: 0.8rem;
+      color: white;
+  }
+
+
+    .contact .content-info .right{
+      width:50%;
+      margin: 2rem 2rem;
+     background-color: white;
+      padding: 2rem 2.5rem;
+      border-top-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+    }
+   
+    .contact .content-info .right form label{
+      color: rgb(99, 95, 95);
+    }
+    .contact .content-info .right form input{
+        background: transparent;
+       
+        border-top:  1px solid white;
+        border-left: 1px solid white;
+        border-right:  1px solid white;
+        border-bottom: 1px solid black;
+    }
+    .contact .content-info .right form textarea{
+      background: transparent;
+      border-top:  1px solid white;
+        border-left: 1px solid white;
+        border-right:  1px solid white;
+        border-bottom: 1px solid black;
+     
+    }
+  
+    .contact .content-info .right form button{
+       
+      background-color: rgb(25, 158, 158);
+        padding: 0.7rem 2.5rem;
+       border: none;
+       border-radius: 3rem;
+    }
+    .contact .content-info .right form button:hover{
+     background: transparent;
+     color:rgb(25, 158, 158) ;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    /* FOOTER  */
+    .footer{
+        margin: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(35, 68, 97);
+
+    }
+    .footer .about-us{
+        width: 50%;
+      
+       text-align: center;
+       padding: 2rem;
+       color: white;
+    }
+    .footer .about-us h2{
+        font-size: 1.5rem;
+        font-family: "Lato", sans-serif;
+    }
+    .footer .about-us {
+      font-size: 0.9rem;
+      font-family: "Lato", sans-serif;
+  }
+    .footer  hr{
+        width: 30%;
+        margin: auto;
+    }
+    .footer p{
+        margin: 1rem 0;
+    }
+    .footer .social-media{
+      width: 50%;
+      text-align: center;
+      padding: 2rem;
+      color: white;
+      
+    }
+    .footer .social-media h2{
+      font-size: 1.6rem;
+      font-family: "Lato", sans-serif;
+  }
+    .footer .social-media .icons{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .footer .social-media i{
+        font-size: 2.3rem;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    .footer .social-media i:hover{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 50%;
+    }
+    
+}

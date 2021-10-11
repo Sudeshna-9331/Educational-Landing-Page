@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobileStyle.css">
+    <link rel="stylesheet" href="tabletStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EDUCATION</title>
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid nav">
+            <p class="navbar-brand"><span>techEdu</span></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#why-us">Why us?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popular-courses">Popular courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faculties">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#faculties">Faculties</a></li>
+                            <li><a class="dropdown-item" href="#faculties">Reviews</a></li>
+                            <li><a class="dropdown-item" href="#faculties">Upcoming Courses</a></li>
+                            <li><a class="dropdown-item" href="#popular-courses">Top Offers</a></li>
+                        </ul>
+                    </div>
+
+                </ul>
+                <form class="d-flex login_signup">
+                    <button type="button" class="btn btn-primary signup" data-bs-toggle="modal"
+                        data-bs-target="#signup">
+                        <a href="#">Signup</a>
+                    </button>
+                    <button type="button" class="btn btn-primary login" data-bs-toggle="modal" data-bs-target="#login">
+                        <a href="#">Login</a>
+                    </button>
+                </form>
+
+
+                <!-- Signup  Modal -->
+                <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">SIGN UP</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                        <input type="cpassword" class="form-control" id="exampleInputPassword1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Signup</button>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Login Modal -->
+                <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- SECTION -->
+    <div class="content" id="section">
+        <div class="container-fluid section">
+            <div class="section_inner">
+                <h1 class="heading">Learn from home</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error odit laboriosam, alias aliquid ex
+                    tempora obcaecati nobis expedita mollitia enim illum exercitationem beatae, rerum delectus.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="container-fluid cards">
+            <div class="card">
+                <img src="./images/course.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Trending Courses</h5>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/cert.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Certifications</h5>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/tutor.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Best Tutors</h5>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- WHY US -->
+    <div class="container-fluid why-us" id="why-us">
+        <img src="./images/studying.png" alt="">
+        <div class="why-us-inner">
+            <h2>Why Us?</h2>
+            <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla fugiat aliquid quidem, minima
+                maxime
+                optio sunt consequuntur amet, dolorum assumenda quisquam nam aspernatur sed ipsum sit eum labore
+                eligendi provident, tempore expedita enim. Ab, saepe odit amet consequatur quis alias culpa minima ex,
+                accusamus nulla illum quod dolores porro voluptates!</p>
+            <div class="points cards">
+                <div class="card1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Our goals</h5>
+                            <p class="card-text">To be improved and more inspiring.</p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Values</h5>
+                            <p class="card-text">To give everyone the ability to be heard,seen,share their thoughts and
+                                experience as they happen.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Dream</h5>
+                            <p class="card-text">It is our compass when we're building the platform and developing new
+                                products and policies.We want to empower indivisuals and be a force for good in the
+                                world.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Mission</h5>
+                            <p class="card-text">Our mission is to provide you with knowledge and skills you need to be
+                                able to craft the kinds of stories that you want to tell.</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- COURSES WE OFFER  -->
+    <div class="container-fluid courses" id="courses">
+
+        <section class="products">
+            <div class="section-title">
+                <h2>Courses We Offer</h2>
+            </div>
+            <div class="products-center">
+                <!-- HTML is written in main.js by DOM 
+                    manipulation -->
+
+            </div>
+        </section>
+    </div>
+
+    <!-- POPULAR COURSES AND DISCOUNTS  -->
+    <div class="container-fluid popular-courses" id="popular-courses">
+        <div class="popular">
+            <div class="heading">
+                Popular Courses
+            </div>
+            <div class="subject">
+                <div class="subject-name">
+                    Java
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100">80%
+                    </div>
+                </div>
+            </div>
+            <div class="subject">
+                <div class="subject-name">
+                    Python
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100">80%</div>
+                </div>
+            </div>
+            <div class="subject">
+                <div class="subject-name">
+                    JavaScript
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100">50%</div>
+                </div>
+            </div>
+            <div class="subject">
+                <div class="subject-name">
+                    PHP
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100">75%</div>
+                </div>
+            </div>
+            <div class="subject">
+                <div class="subject-name">
+                    CSS
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="discounts">
+            <div class="heading">
+                Our top 3 offers
+                <span> UPTO 60% OFF</span>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            60% OFF
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            50% OFF
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            30% OFF
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                                <li class="list-group-item">><a href="">Item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- OUR FACULTIES REVIEWS AND UPCOMING COURSES -->
+    <div class="container faculties" id="faculties">
+        <div class="heading">
+            <h2>Know More About Us</h2>
+
+        </div>
+        <div class="info">
+            <div class="faculty-member">
+                <button class="btn btn-primary show-member" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Our Top Faculties</button>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Our Top Faculties-</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small member cards">
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="reviews">
+                <button class="btn btn-primary show-reviews" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Reviews</button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Reviews-</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body review cards">
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Person's Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Person's Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Person's Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Person's Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Person's Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Person's Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?male,female,random person"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Person's Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitter-square"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="upcoming-courses">
+                <button class="btn btn-primary show-upcoming-courses" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop">Upcoming Courses</button>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                    aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasTopLabel">Upcoming Courses-</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body upcoming-course cards">
+
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?python,c,java,coding,programming"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Course Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?python,c,java,coding,programming"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Course Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?python,c,java,coding,programming"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Course Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?python,c,java,coding,programming"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Course Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?python,c,java,coding,programming"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Course Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?python,c,java,coding,programming"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Course Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/1600x900/?python,c,java,coding,programming"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Course Name</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTACT US  -->
+    <div class="container-fluid contact" id="contact">
+        <div class="heading">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum necessitatibus sint harum assumenda culpa
+                minus quia, deserunt praesentium quis quisquam fugit? Sed corporis et modi.</p>
+
+        </div>
+        <div class="content-info">
+            <div class="left">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Address</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa,
+                                    nemo.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Phone</h5>
+                                <p class="card-text">+911234567890</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <i class="fas fa-envelope-open"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Email</h5>
+                                <p class="card-text">email@email.com</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <form>
+                    <div class="row mb-3">
+                        <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="name" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="message" class="col-sm-2 col-form-label">Your Message</label>
+                        <div class="mb-3 col-sm-10">
+                            <textarea class="form-control" id="message" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid footer" id="footer">
+        <div class="about-us">
+            <h2>About Us</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique inventore tenetur provident harum
+                praesentium dolor libero voluptates repellat non aliquid odio, quo assumenda reprehenderit laboriosam at
+                perspiciatis facere, ex animi!</p>
+
+        </div>
+        <div class="social-media">
+            <h2>Social Links</h2>
+            <hr>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-twitter-square"></i>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+        integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
